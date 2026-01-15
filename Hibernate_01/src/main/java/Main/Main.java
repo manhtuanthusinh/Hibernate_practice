@@ -10,9 +10,9 @@ import org.hibernate.cfg.Configuration;
 public class Main {
     public static void main(String[] args) {
         User u1 = new User();
-        u1.setId(2);
         u1.setName("Quynh Anh");
         u1.setSalary(25000);
+        u1.setEmail("HNQA@example.com");
 
         Configuration config = new Configuration();
         config.addAnnotatedClass(User.class);
