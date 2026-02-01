@@ -1,10 +1,11 @@
 <hibernate-configuration>
     <session-factory>
 
-        <property name="hibernate.connection.driver_class"> com.mysql.cj.jdbc.Driver</property>
-        <property name="hibernate.connection.url">your_jdbc_url</property>
-        <property name="hibernate.connection.username">your_user_name</property>
-        <property name="hibernate.connection.password">your_password</property>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">your_url_postgresql</property>
+        <property name="hibernate.connection.username">your_postgresql_username</property>
+        <property name="hibernate.connection.password">YOUR_PASSWORD_NOT_MINE</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
 
         <property name="hibernate.hbm2ddl.auto">create</property>
         <property name="hibernate.show_sql">true</property>
