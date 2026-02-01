@@ -6,7 +6,7 @@
         <property name="hibernate.connection.username">your_user_name</property>
         <property name="hibernate.connection.password">your_password</property>
 
-        <property name="hibernate.hbm2ddl.auto">create-drop</property>
+        <property name="hibernate.hbm2ddl.auto">create</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.jdbc.batch_size">20</property>
         <property name="hibernate.order_inserts">true</property>
