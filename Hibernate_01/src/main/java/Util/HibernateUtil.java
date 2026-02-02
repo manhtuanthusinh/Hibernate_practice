@@ -10,7 +10,7 @@ public class HibernateUtil {
         try {
             // We need to create the SessionFactory from hibernate.cfg.xml
             return new Configuration()
-                    .configure()
+                    .configure("hibernate.cfg.xml")
                     .buildSessionFactory();
         }
         catch (Exception ex) {
@@ -22,9 +22,5 @@ public class HibernateUtil {
     {
         return sessionFactory;
     }
-    public static void shutdown()
-    {
-        // Close caches and connection pools
-        getSessionFactory().close();
-    }
+    public static void shutdown() { getSessionFactory().close(); }      // Close caches and connection pools
 }

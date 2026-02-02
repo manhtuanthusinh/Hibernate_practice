@@ -16,7 +16,7 @@ public class TestUser {
         using Hibernate ORM
         * */
 
-        String csvFile = "/home/manhtuanthusinh/Documents/java_learning/Hibernate/Hibernate_01/src/main/java/user.csv";
+        String csvFile = "/home/manhtuanthusinh/Documents/java_learning/Hibernate_practice/Hibernate_01/src/main/java/user.csv";
         String line;
         String csvSplitBy = ",";
 
